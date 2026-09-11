@@ -43,20 +43,3 @@ cat /sys/devices/system/cpu/online     # 0-5,8-19  (18 of 20 threads)
 
 The host runs on 13 of 14 cores. This is a workaround; the defect remains until the
 unit is replaced.
-
-## Separately: three cameras offline
-
-Unrelated to the CPU fault, three cameras are unreachable at the network level and
-need a physical check of power/PoE:
-
-| Camera | Address | State |
-|---|---|---|
-| Kitchen | 192.168.1.52 | ARP `FAILED` |
-| LitterBox | 192.168.1.55 | ARP `INCOMPLETE` |
-| Hyperbaric | 192.168.4.51 | unreachable |
-
-The other seven cameras stream normally at ~5 FPS.
-
-> **Diagnostic note:** go2rtc logs `method DESCRIBE failed: 404 Not Found` when its
-> *upstream* dial fails. The 404 is misleading — the real error is the accompanying
-> `no route to host` / `i/o timeout` line.
