@@ -1,0 +1,25 @@
+### Guest kernel oops + segfault summary, boot -1 (2026-08-26 .. 2026-09-11)
+
+Aug 27 01:08:57  Oops: Oops: 0010 [#1] PREEMPT SMP PTI
+Aug 27 01:55:05  python3[475245]: segfault at 7178bd0000 ip 0000007178bd0000 sp 00007ffe211335d8 error 14 likely on CPU 5 (core 5, socket 0)
+Aug 27 02:14:08  traps: python3[532667] general protection fault ip:51412c sp:7fffc1689858 error:0 in python3.11[11412c,41f000+2b4000]
+Aug 27 02:54:18  python3[651919]: segfault at 0 ip 0000000000000000 sp 00007fffca70dad8 error 14 likely on CPU 6 (core 6, socket 0)
+Aug 27 05:46:52  traps: python3[1156883] general protection fault ip:5141a1 sp:7fffb7dfec70 error:0 in python3.11[1141a1,41f000+2b4000]
+Aug 27 05:56:08  python3[1184497]: segfault at ac5ec00010 ip 00000000005182b9 sp 00007fff2c420b20 error 4 in python3.11[1182b9,41f000+2b4000] likely on CPU 5 (core 5, socket 0)
+Aug 27 07:25:28  python3[1443937]: segfault at ac5ec00010 ip 00000000005182b9 sp 00007ffd124f6ef0 error 4 in python3.11[1182b9,41f000+2b4000] likely on CPU 3 (core 3, socket 0)
+Aug 27 07:27:09  traps: python3[1449551] general protection fault ip:55f948 sp:7ffd8fce72f0 error:0 in python3.11[15f948,41f000+2b4000]
+Aug 27 07:29:19  Oops: Oops: 0010 [#2] PREEMPT SMP PTI
+Aug 27 07:29:19  CPU: 5 UID: 0 PID: 1454690 Comm: python3 Tainted: G      D            6.12.74+deb13+1-amd64 #1  Debian 6.12.74-2
+Sep 08 23:55:10  Oops: Oops: 0010 [#3] PREEMPT SMP PTI
+Sep 08 23:55:10  CPU: 6 UID: 0 PID: 3139332 Comm: sqlite3 Tainted: G      D            6.12.74+deb13+1-amd64 #1  Debian 6.12.74-2
+Sep 08 23:55:46  sqlite3[3139380]: segfault at 0 ip 0000000000000000 sp 00007ffc1faab598 error 14 likely on CPU 7 (core 7, socket 0)
+Sep 08 23:56:16  Oops: Oops: 0010 [#4] PREEMPT SMP PTI
+Sep 08 23:56:16  CPU: 1 UID: 0 PID: 3139431 Comm: sqlite3 Tainted: G      D            6.12.74+deb13+1-amd64 #1  Debian 6.12.74-2
+Sep 09 00:04:49  Oops: Oops: 0010 [#5] PREEMPT SMP PTI
+Sep 09 00:04:49  CPU: 3 UID: 0 PID: 3139823 Comm: python3 Tainted: G      D            6.12.74+deb13+1-amd64 #1  Debian 6.12.74-2
+Sep 09 08:25:46  Oops: Oops: 0010 [#6] PREEMPT SMP PTI
+Sep 09 08:25:46  CPU: 3 UID: 0 PID: 3143943 Comm: frigate.output Tainted: G      D            6.12.74+deb13+1-amd64 #1  Debian 6.12.74-2
+Sep 10 20:15:25  traps: enc0:0:aac[401255] general protection fault ip:7f5449634463 sp:7f544944c580 error:0 in libc.so.6[3e463,7f544961c000+156000]
+Sep 10 20:37:31  traps: python3[2729326] general protection fault ip:5141a1 sp:7ffe558481e0 error:0 in python3.11[1141a1,41f000+2b4000]
+Sep 10 23:16:12  python3[2747828]: segfault at 7f66ecc84000 ip 00007f66ecc84000 sp 00007ffdaddb9788 error 15 likely on CPU 4 (core 4, socket 0)
+Sep 10 23:20:12  traps: python3[2748312] general protection fault ip:5141a1 sp:7ffe63cfa840 error:0 in python3.11[1141a1,41f000+2b4000]

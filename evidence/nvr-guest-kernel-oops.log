@@ -1,0 +1,39 @@
+Sep 09 08:25:46 nvr kernel: Oops: Oops: 0010 [#6] PREEMPT SMP PTI
+Sep 09 08:25:46 nvr kernel: CPU: 3 UID: 0 PID: 3143943 Comm: frigate.output Tainted: G      D            6.12.74+deb13+1-amd64 #1  Debian 6.12.74-2
+Sep 09 08:25:46 nvr kernel: Tainted: [D]=DIE
+Sep 09 08:25:46 nvr kernel: Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.17.0-0-gb52ca86e094d-prebuilt.qemu.org 04/01/2014
+Sep 09 08:25:46 nvr kernel: RIP: 0010:0x0
+Sep 09 08:25:46 nvr kernel: Code: Unable to access opcode bytes at 0xffffffffffffffd6.
+Sep 09 08:25:46 nvr kernel: RSP: 0018:ffffd339469d3bd0 EFLAGS: 00010046
+Sep 09 08:25:46 nvr kernel: RAX: 0000000000000000 RBX: 0000000000000000 RCX: ffff8e810cb476c0
+Sep 09 08:25:46 nvr kernel: RDX: ffff8e810cb476c0 RSI: 0000000000000041 RDI: 0000000000000000
+Sep 09 08:25:46 nvr kernel: RBP: ffffd339469d3f58 R08: 0000000094f20940 R09: 0000000000000000
+Sep 09 08:25:46 nvr kernel: R10: 0000000000000000 R11: 0000000000000000 R12: ffff8e810cb46100
+Sep 09 08:25:46 nvr kernel: R13: 0000000000000018 R14: 0000000000000000 R15: 0000000000000000
+Sep 09 08:25:46 nvr kernel: FS:  00007fe4f1ffb6c0(0000) GS:ffff8e81f1b80000(0000) knlGS:0000000000000000
+Sep 09 08:25:46 nvr kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+Sep 09 08:25:46 nvr kernel: CR2: ffffffffffffffd6 CR3: 0000000123d3c000 CR4: 00000000000006f0
+Sep 09 08:25:46 nvr kernel: Call Trace:
+Sep 09 08:25:46 nvr kernel:  <TASK>
+Sep 09 08:25:46 nvr kernel:  syscall_exit_to_user_mode+0x37/0x1b0
+Sep 09 08:25:46 nvr kernel:  do_syscall_64+0x8e/0x190
+Sep 09 08:25:46 nvr kernel:  ? pick_task_fair+0x53/0x130
+Sep 09 08:25:46 nvr kernel:  ? pick_next_task_fair+0x21/0x260
+Sep 09 08:25:46 nvr kernel:  ? _raw_spin_unlock+0xe/0x30
+Sep 09 08:25:46 nvr kernel:  ? __schedule+0x9ab/0xc00
+Sep 09 08:25:46 nvr kernel:  ? arch_exit_to_user_mode_prepare.isra.0+0x16/0xa0
+Sep 09 08:25:46 nvr kernel:  ? syscall_exit_to_user_mode+0x37/0x1b0
+Sep 09 08:25:46 nvr kernel:  ? do_syscall_64+0x8e/0x190
+Sep 09 08:25:46 nvr kernel:  ? do_syscall_64+0x8e/0x190
+Sep 09 08:25:46 nvr kernel:  ? arch_exit_to_user_mode_prepare.isra.0+0x16/0xa0
+Sep 09 08:25:46 nvr kernel:  ? syscall_exit_to_user_mode+0x37/0x1b0
+Sep 09 08:25:46 nvr kernel:  ? update_curr+0x216/0x2a0
+Sep 09 08:25:46 nvr kernel:  ? pick_task_fair+0x53/0x130
+Sep 09 08:25:46 nvr kernel:  ? pick_next_task_fair+0x21/0x260
+Sep 09 08:25:46 nvr kernel:  ? _raw_spin_unlock+0xe/0x30
+Sep 09 08:25:46 nvr kernel:  ? __schedule+0x9ab/0xc00
+Sep 09 08:25:46 nvr kernel:  ? arch_exit_to_user_mode_prepare.isra.0+0x16/0xa0
+Sep 09 08:25:46 nvr kernel:  ? syscall_exit_to_user_mode+0x37/0x1b0
+Sep 09 08:25:46 nvr kernel:  ? do_syscall_64+0x8e/0x190
+Sep 09 08:25:46 nvr kernel:  ? do_syscall_64+0x8e/0x190
+Sep 09 08:25:46 nvr kernel:  ? do_syscall_64+0x8e/0x190
